@@ -58,7 +58,7 @@ namespace HydroDesktop.Plugins.MainPlugin
         {
             InitializeComponent();
             myProjectManager = projManager;
-            lblProductVersion.Text = "CUAHSI HydroDesktop " + AppContext.Instance.ProductVersion;
+            lblProductVersion.Text = "林地展示地理信息系统 " + AppContext.Instance.ProductVersion;
             
             _app = projManager.App;
 

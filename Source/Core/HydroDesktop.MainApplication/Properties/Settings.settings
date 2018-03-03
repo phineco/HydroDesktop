@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="CustomMainFormTitle" Type="System.String" Scope="User">
-      <Value Profile="(Default)">CUAHSI HydroDesktop</Value>
+      <Value Profile="(Default)">林地展示地理信息系统</Value>
     </Setting>
     <Setting Name="CustomAppIconPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">HydroDesktop.ico</Value>

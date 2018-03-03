@@ -5,6 +5,8 @@ using HydroDesktop.Common.Logging;
 using HydroDesktop.ErrorReporting;
 using System.IO;
 using System.Reflection;
+using System.Threading;
+using System.Globalization;
 
 namespace HydroDesktop.MainApplication
 {
@@ -18,6 +20,8 @@ namespace HydroDesktop.MainApplication
         [STAThread]
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-cn");
+
             //Hack described in https://hydrodesktop.codeplex.com/workitem/8676
             AppDomain.CurrentDomain.AssemblyResolve += LoadAssembly;
 

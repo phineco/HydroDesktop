@@ -50,13 +50,14 @@ namespace HydroDesktop.MainApplication
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(871, 149);
-            this.Icon = Properties.Resources.HydroDesktop;
+            this.ClientSize = new System.Drawing.Size(1161, 183);
+            this.Icon = global::HydroDesktop.MainApplication.Properties.Resources.HydroDesktop;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "HydroDesktop";
+            this.Text = "林地展示地理信息系统 ";
             this.LocationChanged += new System.EventHandler(this.MainForm_LocationChanged);
             this.ResumeLayout(false);
 

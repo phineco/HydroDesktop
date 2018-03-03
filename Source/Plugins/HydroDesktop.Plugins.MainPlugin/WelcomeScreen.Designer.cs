@@ -67,7 +67,7 @@
             this.lblProductVersion.Name = "lblProductVersion";
             this.lblProductVersion.Size = new System.Drawing.Size(145, 13);
             this.lblProductVersion.TabIndex = 8;
-            this.lblProductVersion.Text = "CUAHSI HydroDesktop 1.5.0";
+            this.lblProductVersion.Text = "林地展示地理信息系统 1.0.0";
             // 
             // btnBrowseProject
             // 

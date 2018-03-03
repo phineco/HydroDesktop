@@ -3,7 +3,8 @@ using System.ComponentModel.Composition;
 using System.Windows.Forms;
 using DotSpatial.Controls;
 using DotSpatial.Controls.Docking;
-
+using System.Threading;
+using System.Globalization;
 
 namespace HydroDesktop.MainApplication
 {
@@ -22,6 +23,9 @@ namespace HydroDesktop.MainApplication
         /// </summary>
         public MainForm()
         {
+
+            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-cn");
+
             InitializeComponent();
            
             //It looks better if we Maximize the main window, 

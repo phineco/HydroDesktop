@@ -73,6 +73,7 @@ namespace HydroDesktop.Plugins.SplashScreenManager
         /// <param name="Text">Message</param>
         public void UdpateStatusText(string Text)
         {
+            /*
             if (InvokeRequired)
             {
                 // We're not in the UI thread, so we need to call BeginInvoke
@@ -81,6 +82,8 @@ namespace HydroDesktop.Plugins.SplashScreenManager
             }
 
             label1.Text = Text;
+             */
+
             // Must be on the UI thread if we've got this far
             Application.DoEvents();
             
