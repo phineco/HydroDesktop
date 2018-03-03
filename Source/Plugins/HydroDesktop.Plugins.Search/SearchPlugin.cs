@@ -67,8 +67,10 @@ namespace HydroDesktop.Plugins.Search
 
         public override void Activate()
         {
-            AddSearchRibbon();
+            //AddSearchRibbon();
             //searchSummary = new SearchStatusDisplay(App);
+            //Louis: only display select by attribute
+            AddSelectByAttribute();
             base.Activate();
 
             App.SerializationManager.Serializing += SerializationManager_Serializing;
@@ -103,6 +105,13 @@ namespace HydroDesktop.Plugins.Search
                 _rectangleDrawing.Deactivate();
             }
         }
+
+        private void AddSelectByAttribute()
+        {
+            var head = App.HeaderControl;
+            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_By_Attribute, rbAttribute_Click) { GroupCaption = "Map Tool", LargeImage = Resources.select_table_32 });
+        }
+
 
         private void AddSearchRibbon()
         {
@@ -649,9 +658,9 @@ namespace HydroDesktop.Plugins.Search
         {
             CurrentAreaSelectMode = AreaSelectMode.SelectAttribute;
 
-            DeactivateDrawBox();
-            DeactivateSelectAreaByPolygon();
-            DeactivateCurrentView();
+            //DeactivateDrawBox();
+            //DeactivateSelectAreaByPolygon();
+            //DeactivateCurrentView();
 
             AreaHelper.SelectFirstVisiblePolygonLayer((Map)App.Map, false);
             SelectAreaByAttributeDialog.ShowDialog((Map)App.Map);
