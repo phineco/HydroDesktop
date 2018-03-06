@@ -27,6 +27,8 @@ using Msg = HydroDesktop.Plugins.Search.MessageStrings;
 using DotSpatial.Topology;
 using DotSpatial.Symbology;
 using Search3.Settings.UI;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace HydroDesktop.Plugins.Search
 {
@@ -57,7 +59,10 @@ namespace HydroDesktop.Plugins.Search
         private readonly string _searchKey = SharedConstants.SearchRootkey;
         private const string KEYWORDS_SEPARATOR = ";";
         private RootItem tabb = new RootItem(SharedConstants.SearchRootkey, Msg.Search) { SortOrder = -5 };
-     
+
+        private MapLineLayer _mapLineLayer;
+        private SimpleActionItem rbLoadGps;
+
         [Import("Shell")]
         private ContainerControl Shell { get; set; }
 
@@ -109,7 +114,18 @@ namespace HydroDesktop.Plugins.Search
         private void AddSelectByAttribute()
         {
             var head = App.HeaderControl;
-            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_By_Attribute, rbAttribute_Click) { GroupCaption = "Map Tool", LargeImage = Resources.select_table_32 });
+            head.Add(rbSelect = new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_Features, rbSelect_Click) { ToolTipText = Msg.Select_Features_Tooltip, LargeImage = Resources.select_poly_32, GroupCaption = Msg.Area, ToggleGroupKey = Msg.Area, });
+            _searchSettings.AreaSettings.PolygonsChanged += AreaSettings_PolygonsChanged;
+
+            head.Add(rbDrawBox = new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Draw_Rectangle, rbDrawBox_Click) { ToolTipText = Msg.Draw_Box_Tooltip, LargeImage = Resources.Draw_Box_32, SmallImage = Resources.Draw_Box_16, GroupCaption = Msg.Area, ToggleGroupKey = Msg.Area });
+            _searchSettings.AreaSettings.AreaRectangleChanged += Instance_AreaRectangleChanged;
+
+            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_By_Attribute, rbAttribute_Click) { GroupCaption = "地图工具", LargeImage = Resources.select_table_32 });
+
+            rbLoadGps = new SimpleActionItem(HeaderControl.HomeRootItemKey, "加载GPS数据", rbLoadGps_Click) { GroupCaption = "GPS工具", LargeImage = Resources.select_table_32 };
+            head.Add(rbLoadGps);
+            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "刷新GPS数据", rbRefreshGps_Click) { GroupCaption = "GPS工具", LargeImage = Resources.select_table_32 });
+
         }
 
 
@@ -558,15 +574,15 @@ namespace HydroDesktop.Plugins.Search
         {
             var fsPolygons = _searchSettings.AreaSettings.Polygons;
 
-            var caption = "0 features selected ";
+            var caption = "没有选中特征区域 ";
 
             //var caption = "Select Polygons";
             if (fsPolygons != null && fsPolygons.Features.Count > 0)
             {
                 int numPolygons = fsPolygons.Features.Count;
                 caption = numPolygons > 1
-                    ? String.Format("{0} features selected", fsPolygons.Features.Count)
-                    : "1 feature selected";
+                    ? String.Format("选中{0}个特征区域", fsPolygons.Features.Count)
+                    : "选中1个特征区域";
             }
 
             //searchSummary.AreaStatus = SearchSettings.Instance.AreaSettings.AreaRectangle != null ? "Rectangle" : caption;
@@ -667,6 +683,85 @@ namespace HydroDesktop.Plugins.Search
             Map_SelectionChanged(this, EventArgs.Empty);
         }
 
+        //TODO
+        void rbRefreshGps_Click(object sender, EventArgs e)
+        {
+            LinkedList<Coordinate> tmpList = getGpsData();
+            
+            //_mapLineLayer.DataSet.AddRow
+            var coors = _mapLineLayer.DataSet.GetFeature(0).Coordinates;
+            foreach(Coordinate coor in tmpList) {
+                coors.Add(coor);
+            }
+            
+            _mapLineLayer.FeatureSet.InitializeVertices();
+            //var line = new LineString(list);
+
+            //Reproject.ReprojectPoints(array, new double[] { 0, 0, 0, 0 }, ProjectionInfo.FromEsriString(KnownCoordinateSystems.Geographic.World.WGS1984.ToEsriString()), App.Map.Projection, 0, 2);
+            //App.Map.ResetBuffer();
+        }
+
+        //TODO
+        void rbLoadGps_Click(object sender, EventArgs e)
+        {
+            var array = new double[8];
+            array[0] = 117.25;
+            array[1] = 31.83;
+            array[2] = 117.2388;
+            array[3] = 31.83;
+            var coor1 = new Coordinate(array[0], array[1]);
+            var coor2 = new Coordinate(array[2], array[3]);
+            var coords = new Coordinate[2];
+            coords[0] = coor1;
+            coords[1] = coor2;
+
+            LinkedList<Coordinate> tmpList = getGpsData();
+
+
+            var line = new LineString(tmpList);
+
+            //Reproject.ReprojectPoints(array, new double[] { 0, 0, 0, 0 }, ProjectionInfo.FromEsriString(KnownCoordinateSystems.Geographic.World.WGS1984.ToEsriString()), App.Map.Projection, 0, 2);
+
+           var lineFs = new FeatureSet(FeatureType.Line);
+           _mapLineLayer = new MapLineLayer(lineFs);
+           _mapLineLayer.DataSet.AddFeature(line);
+           _mapLineLayer.Symbolizer = new DotSpatial.Symbology.LineSymbolizer(Color.FromArgb(0x33, 0x33, 0x33), 1);
+           _mapLineLayer.LegendText = "GPS";
+           App.Map.Layers.Add(_mapLineLayer);
+           App.Map.ResetBuffer();
+           rbLoadGps.Enabled = false;
+        }
+        //private LinkedList<Coordinate> list = new LinkedList<Coordinate>();
+        private int maxId = 0;
+        public static string connStr = "server=139.196.126.19;user id=;password=;database=dhdata;port=3306;";
+        public static MySqlConnection conn;
+        private LinkedList<Coordinate> getGpsData()
+        {
+            LinkedList<Coordinate> tmplist = new LinkedList<Coordinate>();
+            try {
+                conn = new MySqlConnection(connStr);
+                string sqlStr = string.Format("select PointX, PointY, Id from points where Id > {0} order by Id",maxId);
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand(sqlStr, conn);
+                MySqlDataReader sdr = cmd.ExecuteReader();
+                while (sdr.Read()) {
+                      Coordinate coor = new Coordinate(sdr.GetDouble(0), sdr.GetDouble(1));
+                      maxId = sdr.GetInt16(2);
+                      tmplist.AddLast(coor);
+                }
+            } catch (Exception e) {
+
+            } finally {
+                if (conn != null) {
+                    conn.Close();
+                }
+            }
+
+
+
+            return tmplist;
+        }
+
         public void DeactivateCurrentView()
         {
             if (_useCurrentView)
@@ -718,7 +813,7 @@ namespace HydroDesktop.Plugins.Search
                     GroupCaption = Msg.Keyword,
                     RootKey = _searchKey,
                     Width = 170,
-                    NullValuePrompt = "[Enter Keyword]"
+                    NullValuePrompt = "[输入关键字]"
                   
                 };
 
