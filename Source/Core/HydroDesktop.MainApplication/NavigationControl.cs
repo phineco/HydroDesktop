@@ -90,35 +90,35 @@ namespace HydroDesktop.MainApplication
         private void button1_MouseHover(object sender, EventArgs e)
         {
             var ToolTip1 = new ToolTip();
-            ToolTip1.SetToolTip(button1, "Pan");
+            ToolTip1.SetToolTip(button1, "拖动");
             Cursor = Cursors.Arrow;
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
             var ToolTip2 = new ToolTip();
-            ToolTip2.SetToolTip(button2, "Zoom In");
+            ToolTip2.SetToolTip(button2, "放大");
             Cursor = Cursors.Arrow;
         }
 
         private void button3_MouseHover(object sender, EventArgs e)
         {
             var ToolTip3 = new ToolTip();
-            ToolTip3.SetToolTip(button3, "Zoom Out");
+            ToolTip3.SetToolTip(button3, "缩小");
             Cursor = Cursors.Arrow;
         }
 
         private void button4_MouseHover(object sender, EventArgs e)
         {
             var ToolTip4 = new ToolTip();
-            ToolTip4.SetToolTip(button4, "Select");
+            ToolTip4.SetToolTip(button4, "选择");
             Cursor = Cursors.Arrow;
         }
 
         private void button5_MouseHover(object sender, EventArgs e)
         {
             var ToolTip5 = new ToolTip();
-            ToolTip5.SetToolTip(button5, "Deselect");
+            ToolTip5.SetToolTip(button5, "取消选择");
             Cursor = Cursors.Arrow;
         }
 

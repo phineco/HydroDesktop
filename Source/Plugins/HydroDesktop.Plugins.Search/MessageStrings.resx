@@ -112,138 +112,138 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Add_More_Keywords" xml:space="preserve">
-    <value>    Select Multiple Keywords</value>
+    <value>   增加多个关键字</value>
   </data>
   <data name="Add_Sites" xml:space="preserve">
-    <value>Add Sites Layer</value>
+    <value>增加网页层</value>
   </data>
   <data name="Area" xml:space="preserve">
-    <value>Search Area</value>
+    <value>区域搜索</value>
   </data>
   <data name="Continue_Search" xml:space="preserve">
-    <value>Continue search</value>
+    <value>继续搜索</value>
   </data>
   <data name="Controls" xml:space="preserve">
-    <value>Controls</value>
+    <value>控件</value>
   </data>
   <data name="Current_View" xml:space="preserve">
-    <value>Current View</value>
+    <value>当前视图</value>
   </data>
   <data name="Current_View_Large_Msg" xml:space="preserve">
-    <value>Current view is too large. Search can take a long time. Do you want to continue?</value>
+    <value>当前视图太多。搜索需要花费较长时间，继续吗？</value>
   </data>
   <data name="Current_View_Tooltip" xml:space="preserve">
-    <value>Use the current view extents of the map as the search area.</value>
+    <value>使用当前地图的视图范围作为搜索区域</value>
   </data>
   <data name="Deselect_All" xml:space="preserve">
-    <value>Clear Selection</value>
+    <value>清空所有选择</value>
   </data>
   <data name="Deselect_All_Tooltip" xml:space="preserve">
-    <value>Deselect all features</value>
+    <value>清空所选的特征</value>
   </data>
   <data name="Draw_Box" xml:space="preserve">
-    <value>Draw Box</value>
+    <value>画盒子</value>
   </data>
   <data name="Draw_Box_Tooltip" xml:space="preserve">
-    <value>Draw a rectangle for your search area</value>
+    <value>画盒子作为搜索区域</value>
   </data>
   <data name="Draw_Rectangle" xml:space="preserve">
-    <value>   Draw    Rectangle</value>
+    <value>  画方形</value>
   </data>
   <data name="End_Date" xml:space="preserve">
-    <value>End Date</value>
+    <value>结束日期</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Error</value>
+    <value>错误</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Information</value>
+    <value>信息</value>
   </data>
   <data name="Keyword" xml:space="preserve">
-    <value>Keyword</value>
+    <value>关键字</value>
   </data>
   <data name="Keyword_Tooltip" xml:space="preserve">
-    <value>Show Keyword Ontology Tree</value>
+    <value>在拓扑树上显示关键字</value>
   </data>
   <data name="Pan" xml:space="preserve">
-    <value>Pan</value>
+    <value>拖动</value>
   </data>
   <data name="Run_Search" xml:space="preserve">
-    <value>Run Search</value>
+    <value>开始搜索</value>
   </data>
   <data name="Run_Search_Tooltip" xml:space="preserve">
-    <value>Run Search based on selected criteria</value>
+    <value>根据选择的条件进行搜索</value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Search</value>
+    <value>搜索</value>
   </data>
   <data name="Select_By_Attribute" xml:space="preserve">
-    <value>Select by Attribute</value>
+    <value>选择属性</value>
   </data>
   <data name="Select_Data_Sources" xml:space="preserve">
-    <value>Select Data Sources</value>
+    <value>选择数据源</value>
   </data>
   <data name="Select_Data_Sources_Tooltip" xml:space="preserve">
-    <value>Select data sources (All web services selected)</value>
+    <value>选择数据源(所有选择的网络资源)</value>
   </data>
   <data name="Select_Dates" xml:space="preserve">
-    <value>Select Dates</value>
+    <value>选择日期</value>
   </data>
   <data name="Select_Features" xml:space="preserve">
-    <value>Select Features</value>
+    <value>选择特征</value>
   </data>
   <data name="Select_Features_Tooltip" xml:space="preserve">
-    <value>Click in the map to select features for searching</value>
+    <value>在地图上点击特征进行搜索</value>
   </data>
   <data name="Select_Polygons" xml:space="preserve">
-    <value>Select Polygons</value>
+    <value>选择多边形</value>
   </data>
   <data name="Select_Polygons_Tooltip" xml:space="preserve">
-    <value>Select Region</value>
+    <value>选择多边形区域</value>
   </data>
   <data name="Start_Date" xml:space="preserve">
-    <value>Start Date</value>
+    <value>开始日期</value>
   </data>
   <data name="Start_Date_Validation" xml:space="preserve">
-    <value>Start Date validation</value>
+    <value>校验开始日期</value>
   </data>
   <data name="Start_Date_Validation_Msg" xml:space="preserve">
-    <value>End Date must be greater than Start Date.</value>
+    <value>结束日期必须大于开始日期</value>
   </data>
   <data name="TimeRange_End" xml:space="preserve">
-    <value> End</value>
+    <value>结束</value>
   </data>
   <data name="TimeRange_Start" xml:space="preserve">
-    <value>Start</value>
+    <value>开始</value>
   </data>
   <data name="Time_Range" xml:space="preserve">
-    <value>Time Range</value>
+    <value>时间范围</value>
   </data>
   <data name="Type_In_Keyword" xml:space="preserve">
-    <value>Type-in a Keyword</value>
+    <value>输入关键字</value>
   </data>
   <data name="Zoom_In" xml:space="preserve">
-    <value>In</value>
+    <value>放大</value>
   </data>
   <data name="Zoom_In_Tooltip" xml:space="preserve">
-    <value>Zoom In</value>
+    <value>放大</value>
   </data>
   <data name="Zoom_Out" xml:space="preserve">
-    <value>Out</value>
+    <value>缩小</value>
   </data>
   <data name="Zoom_Out_Tooltip" xml:space="preserve">
-    <value>Zoom Out</value>
+    <value>缩小</value>
   </data>
   <data name="Zoom_Selected" xml:space="preserve">
-    <value>Zoom to Selection</value>
+    <value>缩放选择区域</value>
   </data>
   <data name="Zoom_Selected_Tooltip" xml:space="preserve">
-    <value>Zoom to selected features</value>
+    <value>缩放到选择的特征</value>
   </data>
 </root>

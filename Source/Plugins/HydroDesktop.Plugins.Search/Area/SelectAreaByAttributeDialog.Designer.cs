@@ -41,11 +41,11 @@
             // btnApply
             // 
             this.btnApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnApply.Location = new System.Drawing.Point(146, 186);
+            this.btnApply.Location = new System.Drawing.Point(146, 172);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(75, 23);
+            this.btnApply.Size = new System.Drawing.Size(75, 21);
             this.btnApply.TabIndex = 4;
-            this.btnApply.Text = "Apply";
+            this.btnApply.Text = "应用";
             this.btnApply.UseVisualStyleBackColor = true;
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
@@ -53,81 +53,81 @@
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(227, 186);
+            this.btnOK.Location = new System.Drawing.Point(227, 172);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.Size = new System.Drawing.Size(75, 21);
             this.btnOK.TabIndex = 5;
-            this.btnOK.Text = "OK";
+            this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // lblActiveLayer
             // 
             this.lblActiveLayer.AutoSize = true;
-            this.lblActiveLayer.Location = new System.Drawing.Point(14, 19);
+            this.lblActiveLayer.Location = new System.Drawing.Point(14, 18);
             this.lblActiveLayer.Name = "lblActiveLayer";
-            this.lblActiveLayer.Size = new System.Drawing.Size(69, 13);
+            this.lblActiveLayer.Size = new System.Drawing.Size(83, 12);
             this.lblActiveLayer.TabIndex = 2;
-            this.lblActiveLayer.Text = "Active Layer:";
+            this.lblActiveLayer.Text = "选择图层:";
             // 
             // cmbActiveLayer
             // 
-            this.cmbActiveLayer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbActiveLayer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbActiveLayer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbActiveLayer.FormattingEnabled = true;
-            this.cmbActiveLayer.Location = new System.Drawing.Point(17, 36);
+            this.cmbActiveLayer.Location = new System.Drawing.Point(17, 33);
             this.cmbActiveLayer.Name = "cmbActiveLayer";
-            this.cmbActiveLayer.Size = new System.Drawing.Size(288, 21);
+            this.cmbActiveLayer.Size = new System.Drawing.Size(288, 20);
             this.cmbActiveLayer.TabIndex = 0;
             // 
             // cmbField
             // 
-            this.cmbField.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbField.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbField.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbField.FormattingEnabled = true;
-            this.cmbField.Location = new System.Drawing.Point(17, 81);
+            this.cmbField.Location = new System.Drawing.Point(17, 75);
             this.cmbField.Name = "cmbField";
-            this.cmbField.Size = new System.Drawing.Size(288, 21);
+            this.cmbField.Size = new System.Drawing.Size(288, 20);
             this.cmbField.TabIndex = 1;
             // 
             // lblField
             // 
             this.lblField.AutoSize = true;
-            this.lblField.Location = new System.Drawing.Point(17, 65);
+            this.lblField.Location = new System.Drawing.Point(17, 60);
             this.lblField.Name = "lblField";
-            this.lblField.Size = new System.Drawing.Size(32, 13);
+            this.lblField.Size = new System.Drawing.Size(41, 12);
             this.lblField.TabIndex = 4;
-            this.lblField.Text = "Field:";
+            this.lblField.Text = "选择字段:";
             // 
             // lblValue
             // 
             this.lblValue.AutoSize = true;
-            this.lblValue.Location = new System.Drawing.Point(17, 131);
+            this.lblValue.Location = new System.Drawing.Point(17, 121);
             this.lblValue.Name = "lblValue";
-            this.lblValue.Size = new System.Drawing.Size(141, 13);
+            this.lblValue.Size = new System.Drawing.Size(197, 12);
             this.lblValue.TabIndex = 6;
-            this.lblValue.Text = "Value: type-in first few letters";
+            this.lblValue.Text = "选择值: 输入一个字可自动检索相关联的值";
             // 
             // cmbValues
             // 
             this.cmbValues.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbValues.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbValues.FormattingEnabled = true;
-            this.cmbValues.Location = new System.Drawing.Point(17, 147);
+            this.cmbValues.Location = new System.Drawing.Point(17, 136);
             this.cmbValues.Name = "cmbValues";
-            this.cmbValues.Size = new System.Drawing.Size(288, 21);
+            this.cmbValues.Size = new System.Drawing.Size(288, 20);
             this.cmbValues.TabIndex = 7;
             this.cmbValues.SelectedValueChanged += new System.EventHandler(this.cmbValues_SelectedValueChanged);
             // 
             // SelectAreaByAttributeDialog
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(314, 221);
+            this.ClientSize = new System.Drawing.Size(314, 204);
             this.Controls.Add(this.cmbValues);
             this.Controls.Add(this.lblValue);
             this.Controls.Add(this.cmbField);
@@ -140,7 +140,8 @@
             this.MinimizeBox = false;
             this.Name = "SelectAreaByAttributeDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Select Area By Attribute";
+            this.Text = "根据属性选择区域";
+            this.Load += new System.EventHandler(this.SelectAreaByAttributeDialog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

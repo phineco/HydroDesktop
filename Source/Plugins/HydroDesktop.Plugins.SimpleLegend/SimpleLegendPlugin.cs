@@ -48,12 +48,12 @@ namespace HydroDesktop.Plugins.SimpleLegend
             this.legend1.SelectionHighlight = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(238)))), ((int)(((byte)(252)))));
             this.legend1.Size = new System.Drawing.Size(300, 128);
             this.legend1.TabIndex = 0;
-            this.legend1.Text = "Legend";
+            this.legend1.Text = "图例";
             this.legend1.VerticalScrollEnabled = true;
 
             App.Map.Legend = legend1;
             App.Legend = this.legend1;
-            App.DockManager.Add(new DockablePanel("kLegend", "Legend", legend1, DockStyle.Left) { SmallImage = Properties.Resources.legend_16x16 });
+            App.DockManager.Add(new DockablePanel("kLegend", "图例", legend1, DockStyle.Left) { SmallImage = Properties.Resources.legend_16x16 });
         }
     }
 }

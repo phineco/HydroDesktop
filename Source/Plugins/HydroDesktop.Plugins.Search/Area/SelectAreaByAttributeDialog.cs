@@ -147,5 +147,10 @@ namespace HydroDesktop.Plugins.Search.Area
         {
             btnApply.Enabled = true;
         }
+
+        private void SelectAreaByAttributeDialog_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

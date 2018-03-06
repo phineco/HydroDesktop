@@ -165,7 +165,7 @@ namespace HydroDesktop.Plugins.AttributeDataExplorer
 			base.ClientSize = new System.Drawing.Size(0x1b2, 0x19c);
 			base.Controls.Add(this.hostpanel);
 			base.Name = "MainForm";
-			this.Text = "Attribute Data Explorer";
+			this.Text = "属性数据检索";
 			this.hostpanel.ResumeLayout(false);
 			((ISupportInitialize)this.gridControl1).EndInit();
 			((ISupportInitialize)this.gridView1).EndInit();
@@ -188,10 +188,10 @@ namespace HydroDesktop.Plugins.AttributeDataExplorer
 			this.BindData(this.GetDataFromCurrentLayer(iLayer));
 			if (iLayer == null)
 			{
-				this.Text = "ADE";
+                this.Text = "属性数据检索";
 				return;
 			}
-			this.Text = string.Format("ADE - {0}", iLayer.LegendText);
+            this.Text = string.Format("属性数据检索 - {0}", iLayer.LegendText);
 		}
 
 		public void UILoaded()

@@ -11,7 +11,7 @@ namespace HydroDesktop.Plugins.AttributeDataExplorer
 {
 	public class ShowMessageWhenDataSourceIsNull
 	{
-		private const string NoData = "Select a feature layer to examine attribute data.";
+		private const string NoData = "选择一个图层检索属性数据";
 
 		private GridView _ActiveView;
 
