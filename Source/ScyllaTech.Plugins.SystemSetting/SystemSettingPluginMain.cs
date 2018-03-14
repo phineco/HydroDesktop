@@ -46,6 +46,7 @@ namespace ScyllaTech.Plugins.SystemSetting
                                                 );
 
         private const String LOGIN_EXE = "Login.exe";
+        private const String DEF_PROJECT = @"C:\GitHub\HydroDesktop222\Binaries\20180314.dspx";
 
 
         private void AddSystemSettingMenu()
@@ -198,7 +199,26 @@ namespace ScyllaTech.Plugins.SystemSetting
         }
         private void rbResetProject_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                //MessageBox.Show(App.SerializationManager.CurrentProjectFile);
+                //use the AppManager.SerializationManager to open the project
+                App.SerializationManager.OpenProject(DEF_PROJECT);
+                App.Map.Invalidate();
+                
+            }
+            catch (System.IO.IOException)
+            {
+                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + "), IOException");
+            }
+            catch (System.Xml.XmlException)
+            {
+                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + "), XmlException");
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + "), ArgumentException" + ex.Message);
+            }
 
         }
 

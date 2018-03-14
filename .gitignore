@@ -32,3 +32,14 @@ Source/Plugins/Login/Login/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B
 *.log
 Binaries/trace.log
 *.log
+*.dspx
+*.dbf
+*.mdb
+*.sbx
+*.sbn
+*.prj
+*.lock
+*.shp
+*.shx
+*.zip
+*.log
