@@ -201,7 +201,6 @@ namespace ScyllaTech.Plugins.SystemSetting
         {
             try
             {
-                //MessageBox.Show(App.SerializationManager.CurrentProjectFile);
                 //use the AppManager.SerializationManager to open the project
                 App.SerializationManager.OpenProject(DEF_PROJECT);
                 App.Map.Invalidate();
@@ -209,15 +208,15 @@ namespace ScyllaTech.Plugins.SystemSetting
             }
             catch (System.IO.IOException)
             {
-                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + "), IOException");
+                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + ")");
             }
             catch (System.Xml.XmlException)
             {
-                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + "), XmlException");
+                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + ")");
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + "), ArgumentException" + ex.Message);
+                MessageBox.Show("不能打开工程文件(" + DEF_PROJECT + ")");
             }
 
         }

@@ -123,6 +123,7 @@ Application Exit
 Application Started
 Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
 Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
 Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
 Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
 Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
