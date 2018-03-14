@@ -25,3 +25,7 @@ Source/packages/MySql.Data.6.8.8/CHANGES
 Source/packages/Unity.2.1.505.2/tools/install.ps1
 Source/packages/Unity.2.1.505.2/tools/Utils.psm1
 Source/ScyllaTech.Plugins.SystemSetting/ScyllaTech.Plugins.SystemSetting.v12.suo
+*.dll-old
+Source/Plugins/Login/Login/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+Source/Plugins/Login/Login/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+Source/Plugins/Login/Login/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs

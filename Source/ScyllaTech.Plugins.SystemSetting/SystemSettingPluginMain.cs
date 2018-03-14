@@ -191,16 +191,20 @@ namespace ScyllaTech.Plugins.SystemSetting
         }
         private void rbAbout_Click(object sender, EventArgs e)
         {
-
+            //
+            Form_About form = new Form_About();
+            form.ShowDialog();
 
         }
         private void rbExitSystem_Click(object sender, EventArgs e)
         {
-            
+            //
+            Environment.Exit(0);
 
         }
         private void rbSwitchUser_Click(object sender, EventArgs e)
         {
+            //
 
         }
         void aboutButton_Click(object sender, EventArgs e)

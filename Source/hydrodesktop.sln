@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugins.ShaleNetwork", "Plu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScyllaTech.Plugins.SystemSetting", "ScyllaTech.Plugins.SystemSetting\ScyllaTech.Plugins.SystemSetting.csproj", "{D1D4091B-2E87-4D9D-9A2B-E3084A5F68CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Plugins\Login\Login\Login.csproj", "{FD7D0196-4AE3-473C-BD05-6219A52F6059}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -430,6 +432,12 @@ Global
 		{D1D4091B-2E87-4D9D-9A2B-E3084A5F68CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1D4091B-2E87-4D9D-9A2B-E3084A5F68CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1D4091B-2E87-4D9D-9A2B-E3084A5F68CE}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -478,6 +486,7 @@ Global
 		{3AEF14A0-5567-4F53-A4E6-4F1F692A1448} = {8F16592A-496B-467E-95A8-DA5840E550D3}
 		{B0526359-9A59-42FE-AE66-B0ADED8AB53B} = {7F39DEEA-2812-48F6-A324-627A97C3DA89}
 		{D1D4091B-2E87-4D9D-9A2B-E3084A5F68CE} = {8F16592A-496B-467E-95A8-DA5840E550D3}
+		{FD7D0196-4AE3-473C-BD05-6219A52F6059} = {8F16592A-496B-467E-95A8-DA5840E550D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
