@@ -1,0 +1,35 @@
+[2018/3/14 20:19:47] [INFO] [HydroDesktop.MainApplication.Program.Main]
+Application Started
+Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
+Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.ExtensionManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.WebMap
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.MainPlugin
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.SplashScreenManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\ScyllaTech.Plugins.SystemSetting
+ProjectionInfo.ParseProj4String: command 'R_A' not understood in '+proj=mill +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +R_A +ellps=WGS84 +datum=WGS84 +units=m +no_defs '
+ProjectionInfo.ParseProj4String: command 'R_A' not understood in '+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +ellps=WGS84 +datum=WGS84 +units=m +no_defs '
+Activating: DotSpatial.Plugins.ExtensionManager.ExtensionManagerPlugin, DotSpatial.Plugins.ExtensionManager, Version=1.1.4.0, Culture=neutral, PublicKeyToken=null
+Activating: DotSpatial.Plugins.WebMap.WebMapPlugin, DotSpatial.Plugins.WebMap, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: ScyllaTech.Plugins.SystemSetting.SystemSettingPluginMain, ScyllaTech.Plugins.SystemSetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2018/3/14 20:20:48] [INFO] [HydroDesktop.MainApplication.Program+<>c__DisplayClass5.<Main>b__0]
+Application Exit
+[2018/3/14 20:21:45] [INFO] [HydroDesktop.MainApplication.Program.Main]
+Application Started
+Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
+Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.SplashScreenManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\ScyllaTech.Plugins.SystemSetting
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: ScyllaTech.Plugins.SystemSetting.SystemSettingPluginMain, ScyllaTech.Plugins.SystemSetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2018/3/14 20:22:06] [INFO] [HydroDesktop.MainApplication.Program+<>c__DisplayClass5.<Main>b__0]
+Application Exit
