@@ -57,7 +57,7 @@ namespace HydroDesktop.MainApplication
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "林地展示地理信息系统 ";
+            this.Text = "深圳市罗湖区林地展示平台v1.0 ";
             this.LocationChanged += new System.EventHandler(this.MainForm_LocationChanged);
             this.ResumeLayout(false);
 

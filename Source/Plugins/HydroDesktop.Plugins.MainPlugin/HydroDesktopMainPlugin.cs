@@ -13,7 +13,7 @@
 
     public class HydroDesktopMainPlugin : Extension, IPartImportsSatisfiedNotification
     {
-        private const string HYDRODESKTOP_NAME = "林地展示地理信息系统";
+        private const string HYDRODESKTOP_NAME = "深圳市罗湖区林地展示平台v1.0";
 
         //the seriesView component is the shared HydroDesktop component
         //for database management
@@ -69,7 +69,7 @@
             base.Activate();
 
             //Used for adding the new Welcome form to the menu.  The new Welcome form will replace the "Open sample project..." form.
-            SimpleActionItem simpleActionItem = new SimpleActionItem(HeaderControl.ApplicationMenuKey, "Projects...", OpenProjects_Click);
+            SimpleActionItem simpleActionItem = new SimpleActionItem(HeaderControl.ApplicationMenuKey, "项目...", OpenProjects_Click);
             simpleActionItem.GroupCaption = "kApplicationMenu";
             simpleActionItem.LargeImage = HydroDesktop.Plugins.MainPlugin.Properties.Resources.logo_32x32;
             simpleActionItem.SmallImage = HydroDesktop.Plugins.MainPlugin.Properties.Resources.logo_16x16;
@@ -99,7 +99,7 @@
             var projectExists = (!String.IsNullOrEmpty(App.SerializationManager.CurrentProjectFile));
             if (!projectExists)
             {
-                var res = MessageBox.Show(string.Format("Save changes to new project?"),
+                var res = MessageBox.Show(string.Format("保存修改到新项目？"),
                                      HYDRODESKTOP_NAME,
                                      MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question,
                                      MessageBoxDefaultButton.Button3);
@@ -123,7 +123,7 @@
             var hasProjectChanges = App.SerializationManager.IsDirty;
             if (hasProjectChanges)
             {
-                var res = MessageBox.Show(string.Format("Save changes to current project [{0}]?", GetProjectShortName()),
+                var res = MessageBox.Show(string.Format("保存更改到当前项目 [{0}]？", GetProjectShortName()),
                                     HYDRODESKTOP_NAME,
                                     MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question,
                                     MessageBoxDefaultButton.Button3);
@@ -143,7 +143,7 @@
             }
             else
             {
-                var res = MessageBox.Show(string.Format("Exit HydroDesktop?"),
+                var res = MessageBox.Show(string.Format("退出系统？"),
                                     HYDRODESKTOP_NAME,
                                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question,
                                     MessageBoxDefaultButton.Button2);
