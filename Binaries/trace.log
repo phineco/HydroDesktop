@@ -33,3 +33,74 @@ Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBa
 Activating: ScyllaTech.Plugins.SystemSetting.SystemSettingPluginMain, ScyllaTech.Plugins.SystemSetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 [2018/3/14 20:22:06] [INFO] [HydroDesktop.MainApplication.Program+<>c__DisplayClass5.<Main>b__0]
 Application Exit
+[2018/3/14 20:27:30] [INFO] [HydroDesktop.MainApplication.Program.Main]
+Application Started
+Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
+Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.SplashScreenManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\ScyllaTech.Plugins.SystemSetting
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: ScyllaTech.Plugins.SystemSetting.SystemSettingPluginMain, ScyllaTech.Plugins.SystemSetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2018/3/14 20:41:12] [INFO] [HydroDesktop.MainApplication.Program+<>c__DisplayClass5.<Main>b__0]
+Application Exit
+[2018/3/14 20:41:23] [INFO] [HydroDesktop.MainApplication.Program.Main]
+Application Started
+Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
+Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.SplashScreenManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\ScyllaTech.Plugins.SystemSetting
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral[2018/3/14 20:46:58] [INFO] [HydroDesktop.MainApplication.Program.Main]
+Application Started
+Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
+Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.SplashScreenManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\ScyllaTech.Plugins.SystemSetting
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: ScyllaTech.Plugins.SystemSetting.SystemSettingPluginMain, ScyllaTech.Plugins.SystemSetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2018/3/14 20:47:04] [INFO] [HydroDesktop.MainApplication.Program+<>c__DisplayClass5.<Main>b__0]
+Application Exit
+[2018/3/14 20:47:25] [INFO] [HydroDesktop.MainApplication.Program.Main]
+Application Started
+Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
+Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.SplashScreenManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\ScyllaTech.Plugins.SystemSetting
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: ScyllaTech.Plugins.SystemSetting.SystemSettingPluginMain, ScyllaTech.Plugins.SystemSetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2018/3/14 20:47:34] [INFO] [HydroDesktop.MainApplication.Program+<>c__DisplayClass5.<Main>b__0]
+Application Exit
+[2018/3/14 20:47:45] [INFO] [HydroDesktop.MainApplication.Program.Main]
+Application Started
+Cataloging: HydroDesktop_1_6_dev, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null
+Cataloging: DotSpatial.Data, Version=1.6.1.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.MenuBar
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\DotSpatial.Plugins.Ribbon
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.Docking
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\HydroDesktop.Plugins.SplashScreenManager
+Cataloging: C:\GitHub\HydroDesktop222\Binaries\Plugins\ScyllaTech.Plugins.SystemSetting
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: DotSpatial.Plugins.MenuBar.MenuBarPlugin, DotSpatial.Plugins.MenuBar, Version=0.11.9.6, Culture=neutral, PublicKeyToken=null
+Activating: ScyllaTech.Plugins.SystemSetting.SystemSettingPluginMain, ScyllaTech.Plugins.SystemSetting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2018/3/14 20:48:57] [INFO] [HydroDesktop.MainApplication.Program+<>c__DisplayClass5.<Main>b__0]
+Application Exit

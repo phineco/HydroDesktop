@@ -11,6 +11,8 @@ using DotSpatial.Controls.Docking;
 using MySql.Data.MySqlClient;
 using DotSpatial.Topology;
 using ScyllaTech.Plugins.SystemSetting.Properties;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace ScyllaTech.Plugins.SystemSetting
 {
@@ -30,6 +32,18 @@ namespace ScyllaTech.Plugins.SystemSetting
         #endregion
 
         #region Private Methods
+
+        [DllImport("shell32.dll")]
+        public extern static IntPtr ShellExecute(IntPtr hwnd,
+                                                 string lpOperation,
+                                                 string lpFile,
+                                                 string lpParameters,
+                                                 string lpDirectory,
+                                                 int nShowCmd
+                                                );
+
+        private const String LOGIN_EXE = "Login.exe";
+
 
         private void AddSystemSettingMenu()
         {
@@ -198,13 +212,15 @@ namespace ScyllaTech.Plugins.SystemSetting
         }
         private void rbExitSystem_Click(object sender, EventArgs e)
         {
-            //
-            Environment.Exit(0);
-
+            System.Windows.Forms.Application.Exit();
         }
         private void rbSwitchUser_Click(object sender, EventArgs e)
         {
             //
+            ShellExecute(IntPtr.Zero, "open", LOGIN_EXE, "", "", 1);
+            System.Windows.Forms.Application.Exit();
+
+
 
         }
         void aboutButton_Click(object sender, EventArgs e)
