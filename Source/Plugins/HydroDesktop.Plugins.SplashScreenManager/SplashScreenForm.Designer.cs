@@ -80,7 +80,7 @@
             this.label3.Size = new System.Drawing.Size(263, 29);
             this.label3.TabIndex = 5;
             this.label3.Text = "深圳市罗湖区林地展示平台V1.0";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            //this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // SplashScreenForm
             // 
