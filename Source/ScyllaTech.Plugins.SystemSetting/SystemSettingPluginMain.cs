@@ -168,14 +168,15 @@ namespace ScyllaTech.Plugins.SystemSetting
             _mapLineLayer = new MapLineLayer(lineFs);
             _mapLineLayer.DataSet.AddFeature(line);
             _mapLineLayer.Symbolizer = new DotSpatial.Symbology.LineSymbolizer(Color.FromArgb(0x33, 0x33, 0x33), 1);
-            _mapLineLayer.LegendText = "GPS";
+            _mapLineLayer.LegendText = "轨迹";
             App.Map.Layers.Add(_mapLineLayer);
             App.Map.ResetBuffer();
             rbLoadGps.Enabled = false;
         }
         private void rbLatLong_Click(object sender, EventArgs e)
         {
-
+            ZoomToCoordinatesDialog dialog = new ZoomToCoordinatesDialog(App.Map);
+            dialog.ShowDialog();
 
         }
         private void rbResetProject_Click(object sender, EventArgs e)

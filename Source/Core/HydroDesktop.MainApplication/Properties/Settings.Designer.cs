@@ -25,7 +25,7 @@ namespace HydroDesktop.MainApplication.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("林地展示地理信息系统")]
+        [global::System.Configuration.DefaultSettingValueAttribute("深圳市罗湖区林地展示平台V1.0")]
         public string CustomMainFormTitle {
             get {
                 return ((string)(this["CustomMainFormTitle"]));

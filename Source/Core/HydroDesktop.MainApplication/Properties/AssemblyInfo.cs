@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HydroDesktop")]
+[assembly: AssemblyTitle("DongHuaGISDesktop")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("CUAHSI")]
-[assembly: AssemblyProduct("HydroDesktop")]
-[assembly: AssemblyCopyright("Copyright © CUAHSI 2012")]
+[assembly: AssemblyCompany("DongHua")]
+[assembly: AssemblyProduct("DongHuaGISDesktop")]
+[assembly: AssemblyCopyright("Copyright © DongHua 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

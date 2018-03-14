@@ -13,7 +13,7 @@
 
     public class HydroDesktopMainPlugin : Extension, IPartImportsSatisfiedNotification
     {
-        private const string HYDRODESKTOP_NAME = "深圳市罗湖区林地展示平台v1.0";
+        private const string HYDRODESKTOP_NAME = "深圳市罗湖区林地展示平台V1.0";
 
         //the seriesView component is the shared HydroDesktop component
         //for database management
