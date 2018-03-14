@@ -51,6 +51,9 @@
     <Reference Include="DotSpatial.Projections">
       <HintPath>..\packages\DotSpatial.Projections.1.6.1\lib\net40-Client\DotSpatial.Projections.dll</HintPath>
     </Reference>
+    <Reference Include="DotSpatial.Projections.Forms">
+      <HintPath>..\packages\DotSpatial.Projections.Forms.1.6.1\lib\net40-Client\DotSpatial.Projections.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="DotSpatial.Symbology">
       <HintPath>..\packages\DotSpatial.Symbology.1.6.1\lib\net40-Client\DotSpatial.Symbology.dll</HintPath>
     </Reference>

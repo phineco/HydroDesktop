@@ -13,6 +13,9 @@ using DotSpatial.Topology;
 using ScyllaTech.Plugins.SystemSetting.Properties;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using DotSpatial.Projections.Forms;
+using DotSpatial.Projections;
+using System.Windows.Forms;
 
 namespace ScyllaTech.Plugins.SystemSetting
 {
@@ -198,11 +201,17 @@ namespace ScyllaTech.Plugins.SystemSetting
 
 
         }
+
+        private ProjectionInfo SelectedCoordinateSystem;
         private void rbCoorSet_Click(object sender, EventArgs e)
         {
-
-
+            SelectedCoordinateSystem = KnownCoordinateSystems.Geographic.World.WGS1984;
+            ProjectionSelectDialog dialog = new ProjectionSelectDialog();
+            dialog.SelectedCoordinateSystem = SelectedCoordinateSystem;
+            if (dialog.ShowDialog() != DialogResult.OK) return;
+            SelectedCoordinateSystem = dialog.SelectedCoordinateSystem;
         }
+
         private void rbAbout_Click(object sender, EventArgs e)
         {
             //
