@@ -46,12 +46,13 @@ namespace ScyllaTech.Plugins.SystemSetting
                                                 );
 
         private const String LOGIN_EXE = "Login.exe";
-        private const String DEF_PROJECT = @"C:\GitHub\HydroDesktop222\Binaries\20180314.dspx";
+        private const String DEF_PROJECT = @"C:\Program Files (x86)\深圳市罗湖区林地展示平台V1.0\donghua\donghua.dspx";
 
 
         private void AddSystemSettingMenu()
         {
             var head = App.HeaderControl;
+            head.Remove(HeaderControl.ApplicationMenuKey);
             //head.Add(rbSelect = new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_Features, rbSelect_Click) { ToolTipText = Msg.Select_Features_Tooltip, LargeImage = Resources.select_poly_32, GroupCaption = Msg.Area, ToggleGroupKey = Msg.Area, });
             //_searchSettings.AreaSettings.PolygonsChanged += AreaSettings_PolygonsChanged;
 
@@ -60,19 +61,19 @@ namespace ScyllaTech.Plugins.SystemSetting
 
             //head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_By_Attribute, rbAttribute_Click) { GroupCaption = "地图工具", LargeImage = Resources.select_table_32 });
 
-            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "定位", rbLatLong_Click) { GroupCaption = "查询", LargeImage = Properties.Resources.select_table_32 });
+            //head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "定位", rbLatLong_Click) { GroupCaption = "查询", LargeImage = Properties.Resources.select_table_32 });
 
-            rbLoadGps = new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步轨迹", rbLoadGps_Click) { GroupCaption = "同步", LargeImage = Resources.select_table_32 };
+            rbLoadGps = new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步轨迹", rbLoadGps_Click) { GroupCaption = "同步", LargeImage = Resources.gps_sync_32px };
             head.Add(rbLoadGps);
-            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步采集", rbRefreshGps_Click) { GroupCaption = "同步", LargeImage = Resources.select_table_32 });
+            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步采集", rbRefreshGps_Click) { GroupCaption = "同步", LargeImage = Resources.geometry_ync_32px });
 
             head.Add(setting_tab);
-            head.Add(new SimpleActionItem("kSettingTab", "重置工程", rbResetProject_Click) { GroupCaption = "工程", LargeImage = Resources.select_table_32 });
-            head.Add(new SimpleActionItem("kSettingTab", "坐标系设置", rbCoorSet_Click) { GroupCaption = "设置", LargeImage = Resources.select_table_32 });
+            head.Add(new SimpleActionItem("kSettingTab", "重置工程", rbResetProject_Click) { GroupCaption = "工程", LargeImage = Resources.reset_32px });
+            head.Add(new SimpleActionItem("kSettingTab", "坐标系设置", rbCoorSet_Click) { GroupCaption = "设置", LargeImage = Resources.coordinate_32px });
             head.Add(about_tab);
-            head.Add(new SimpleActionItem("kAboutTab", "关于", rbAbout_Click) { GroupCaption = "关于", LargeImage = Resources.select_table_32 });
-            head.Add(new SimpleActionItem("kAboutTab", "退出系统", rbExitSystem_Click) { GroupCaption = "用户", LargeImage = Resources.select_table_32 });
-            head.Add(new SimpleActionItem("kAboutTab", "切换用户", rbSwitchUser_Click) { GroupCaption = "用户", LargeImage = Resources.select_table_32 });
+            head.Add(new SimpleActionItem("kAboutTab", "关于", rbAbout_Click) { GroupCaption = "关于", LargeImage = Resources.about_32px });
+            head.Add(new SimpleActionItem("kAboutTab", "退出系统", rbExitSystem_Click) { GroupCaption = "用户", LargeImage = Resources.exit_32px });
+            head.Add(new SimpleActionItem("kAboutTab", "切换用户", rbSwitchUser_Click) { GroupCaption = "用户", LargeImage = Resources.switch_user_32px });
 
         }
 
@@ -126,7 +127,7 @@ namespace ScyllaTech.Plugins.SystemSetting
         }
 
         private int maxId = 0;
-        public static string connStr = "server=139.196.126.19;user id=;password=;database=dhdata;port=3306;";
+        public static string connStr = "server=139.196.126.19;user id=donghua;password=DongHua2017;database=dhdata;port=3306;";
         public static MySqlConnection conn;
         private LinkedList<Coordinate> getGpsData()
         {

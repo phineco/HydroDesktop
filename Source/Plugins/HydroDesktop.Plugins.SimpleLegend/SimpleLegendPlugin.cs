@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using DotSpatial.Controls;
+using DotSpatial.Controls.Header;
 using DotSpatial.Controls.Docking;
 
 namespace HydroDesktop.Plugins.SimpleLegend
@@ -15,6 +16,8 @@ namespace HydroDesktop.Plugins.SimpleLegend
 
         public override void Activate()
         {
+            var head = App.HeaderControl;
+            head.Remove(HeaderControl.ApplicationMenuKey);
             ShowLegend();
             base.Activate();
         }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ScyllaTech.Plugins.SystemSetting.Properties {
+namespace ScyllaTech.Plugins.ScaleBar.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

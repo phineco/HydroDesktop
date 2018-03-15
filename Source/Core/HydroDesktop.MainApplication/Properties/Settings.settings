@@ -1,9 +1,9 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HydroDesktop.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HydroDesktop.MainApplication.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="CustomMainFormTitle" Type="System.String" Scope="User">
-      <Value Profile="(Default)">林地展示地理信息系统</Value>
+      <Value Profile="(Default)">深圳市罗湖区林地展示平台V1.0</Value>
     </Setting>
     <Setting Name="CustomAppIconPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">HydroDesktop.ico</Value>

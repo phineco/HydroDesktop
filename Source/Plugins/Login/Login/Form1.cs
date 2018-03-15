@@ -65,7 +65,7 @@ namespace Login
             return isLogin(strUser,strPass);
         }
 
-        public static string connStr = "server=139.196.126.19;user id=;password=;database=dhdata;port=3306;";
+        public static string connStr = "server=139.196.126.19;user id=donghua;password=DongHua2017;database=dhdata;port=3306;";
         public static MySqlConnection conn;
         private bool isLogin(string userName, string password)
         {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D1F7B81F-BCAB-40AC-BAB8-1D1CD57944D9}"
 	ProjectSection(SolutionItems) = preProject
@@ -104,6 +104,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScyllaTech.Plugins.SystemSetting", "ScyllaTech.Plugins.SystemSetting\ScyllaTech.Plugins.SystemSetting.csproj", "{D1D4091B-2E87-4D9D-9A2B-E3084A5F68CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Plugins\Login\Login\Login.csproj", "{FD7D0196-4AE3-473C-BD05-6219A52F6059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScyllaTech.Plugins.ScaleBar", "ScyllaTech.Plugins.ScaleBar\ScyllaTech.Plugins.ScaleBar.csproj", "{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScyllaTech.Plugins.StatusBar", "ScyllaTech.Plugins.StatusBar\ScyllaTech.Plugins.StatusBar.csproj", "{800FB022-F21F-47D4-8BAC-3E90380BAF7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -438,6 +442,22 @@ Global
 		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD7D0196-4AE3-473C-BD05-6219A52F6059}.Release|x86.ActiveCfg = Release|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Debug|x86.Build.0 = Debug|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Release|x86.ActiveCfg = Release|Any CPU
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC}.Release|x86.Build.0 = Release|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Debug|x86.Build.0 = Debug|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Release|x86.ActiveCfg = Release|Any CPU
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -487,6 +507,8 @@ Global
 		{B0526359-9A59-42FE-AE66-B0ADED8AB53B} = {7F39DEEA-2812-48F6-A324-627A97C3DA89}
 		{D1D4091B-2E87-4D9D-9A2B-E3084A5F68CE} = {8F16592A-496B-467E-95A8-DA5840E550D3}
 		{FD7D0196-4AE3-473C-BD05-6219A52F6059} = {8F16592A-496B-467E-95A8-DA5840E550D3}
+		{465FE1B5-FFC2-4ABD-9C3D-B8EBD24DC4BC} = {8F16592A-496B-467E-95A8-DA5840E550D3}
+		{800FB022-F21F-47D4-8BAC-3E90380BAF7D} = {8F16592A-496B-467E-95A8-DA5840E550D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
