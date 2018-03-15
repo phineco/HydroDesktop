@@ -130,6 +130,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon1.ico" />
+    <None Include="Resources\reset_32px.png" />
+    <None Include="Resources\exit_32px.png" />
+    <None Include="Resources\coordinate_32px.png" />
+    <None Include="Resources\about_32px.png" />
+    <None Include="Resources\switch_user_32px.png" />
+    <None Include="Resources\location_32px.png" />
+    <None Include="Resources\gps_sync_32px.png" />
+    <None Include="Resources\geometry_ync_32px.png" />
     <None Include="Resources\select_table_32.png" />
     <None Include="Resources\select_table_16.png" />
   </ItemGroup>
