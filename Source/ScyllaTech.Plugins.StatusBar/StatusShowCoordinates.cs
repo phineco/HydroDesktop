@@ -28,7 +28,7 @@ namespace ScyllaTech.Plugins.StatusBar
             };
             _yPanel = new StatusPanel
             {
-                Width = 320
+                Width = 290
             };
             App.ProgressHandler.Add(_xPanel);
             App.ProgressHandler.Add(_yPanel);
@@ -50,7 +50,7 @@ namespace ScyllaTech.Plugins.StatusBar
 
         private void MapGeoMouseMove(object sender, GeoMouseArgs e)
         {
-            _xPanel.Caption = string.Format("X: {0:.#####}， Y: {0:.#####}", e.GeographicLocation.X, e.GeographicLocation.Y);
+            _xPanel.Caption = string.Format("|    Xian1980 X: {0:.#####}， Y: {0:.#####}", e.GeographicLocation.X, e.GeographicLocation.Y);
             _yPanel.Caption = string.Format("深圳坐标系 X: {0:.#####}， Y: {0:.#####}", e.GeographicLocation.X, e.GeographicLocation.Y);
         }
 

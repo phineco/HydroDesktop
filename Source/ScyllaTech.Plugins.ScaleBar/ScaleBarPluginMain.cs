@@ -47,7 +47,7 @@ namespace ScyllaTech.Plugins.ScaleBar
                 AllowEditingText = true,
                 Caption = Resources.ScaleBar_Box_Text,
                 ToolTipText = Resources.ScaleBar_Box_ToolTip,
-                Width = 45,
+                Width = 100,
                 Key = StrKeyScaleBarDropDown
             };
             _scaleDropDown.Items.Add("[" + Resources.Custom + "]");
