@@ -16,6 +16,7 @@ using System.Runtime.InteropServices;
 using DotSpatial.Projections.Forms;
 using DotSpatial.Projections;
 using System.Windows.Forms;
+using DotSpatial.Plugins.MenuBar;
 
 namespace ScyllaTech.Plugins.SystemSetting
 {
@@ -52,17 +53,16 @@ namespace ScyllaTech.Plugins.SystemSetting
         private void AddSystemSettingMenu()
         {
             var head = App.HeaderControl;
-            head.Remove(HeaderControl.ApplicationMenuKey);
+
             //head.Add(rbSelect = new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_Features, rbSelect_Click) { ToolTipText = Msg.Select_Features_Tooltip, LargeImage = Resources.select_poly_32, GroupCaption = Msg.Area, ToggleGroupKey = Msg.Area, });
             //_searchSettings.AreaSettings.PolygonsChanged += AreaSettings_PolygonsChanged;
 
-            //head.Add(rbDrawBox = new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Draw_Rectangle, rbDrawBox_Click) { ToolTipText = Msg.Draw_Box_Tooltip, LargeImage = Resources.Draw_Box_32, SmallImage = Resources.Draw_Box_16, GroupCaption = Msg.Area, ToggleGroupKey = Msg.Area });
+            //head.Add(new SimpleActionItem(HeaderControl.ApplicationMenuKey, "test", testSelected) { GroupCaption= HeaderControl.ApplicationMenuKey, LargeImage = Resources.select_table_32 });
             //_searchSettings.AreaSettings.AreaRectangleChanged += Instance_AreaRectangleChanged;
 
             //head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_By_Attribute, rbAttribute_Click) { GroupCaption = "地图工具", LargeImage = Resources.select_table_32 });
 
             //head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "定位", rbLatLong_Click) { GroupCaption = "查询", LargeImage = Properties.Resources.select_table_32 });
-
             rbLoadGps = new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步轨迹", rbLoadGps_Click) { GroupCaption = "同步", LargeImage = Resources.gps_sync_32px };
             head.Add(rbLoadGps);
             head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步采集", rbRefreshGps_Click) { GroupCaption = "同步", LargeImage = Resources.geometry_ync_32px });
@@ -74,7 +74,7 @@ namespace ScyllaTech.Plugins.SystemSetting
             head.Add(new SimpleActionItem("kAboutTab", "关于", rbAbout_Click) { GroupCaption = "关于", LargeImage = Resources.about_32px });
             head.Add(new SimpleActionItem("kAboutTab", "退出系统", rbExitSystem_Click) { GroupCaption = "用户", LargeImage = Resources.exit_32px });
             head.Add(new SimpleActionItem("kAboutTab", "切换用户", rbSwitchUser_Click) { GroupCaption = "用户", LargeImage = Resources.switch_user_32px });
-
+            //head.Remove(HeaderControl.ApplicationMenuKey);
         }
 
 
@@ -90,7 +90,7 @@ namespace ScyllaTech.Plugins.SystemSetting
         {
             // Remove ribbon tab
             App.HeaderControl.RemoveAll();
-            
+
             base.Deactivate();
         }
         /// <summary>
@@ -102,12 +102,21 @@ namespace ScyllaTech.Plugins.SystemSetting
             AddSystemSettingMenu();
             // This line ensures that "Enabled" is set to true
             base.Activate();
+            App.HeaderControl.Remove(HeaderControl.ApplicationMenuKey);
         }
 
 
         #endregion
 
         #region Event Handlers
+        void testSelected(object sender, EventArgs e)
+            {
+            ((SimpleActionItem)sender).Enabled = false;
+            ((SimpleActionItem)sender).Visible = false;
+            App.HeaderControl.Remove(((SimpleActionItem)sender).RootKey);
+            String x = "xxx";
+            }
+
         void rbRefreshGps_Click(object sender, EventArgs e)
         {
             LinkedList<Coordinate> tmpList = getGpsData();
@@ -194,7 +203,7 @@ namespace ScyllaTech.Plugins.SystemSetting
         }
         private void rbLatLong_Click(object sender, EventArgs e)
         {
-            ZoomToCoordinatesDialog dialog = new ZoomToCoordinatesDialog(App.Map);
+            ZoomToCoordinatesDialog dialog = new ZoomToCoordinatesDialog();
             dialog.ShowDialog();
 
         }
