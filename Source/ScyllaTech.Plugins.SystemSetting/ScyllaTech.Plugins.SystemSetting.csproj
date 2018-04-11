@@ -136,6 +136,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon1.ico" />
+    <None Include="Resources\about3.jpg" />
+    <None Include="Resources\about2.jpg" />
+    <None Include="Resources\about1.jpg" />
+    <None Include="Resources\about.PNG" />
+    <None Include="Resources\about.jpg" />
     <None Include="Resources\switch_user_32px.png" />
     <None Include="Resources\reset_32px.png" />
     <None Include="Resources\location_32px.png" />
