@@ -101,5 +101,13 @@ namespace Login
 
             return false;
         }
+
+        private void tbPass_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
     }
 }

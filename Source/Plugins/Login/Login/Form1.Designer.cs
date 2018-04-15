@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbUser = new System.Windows.Forms.TextBox();
@@ -42,10 +43,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(341, 142);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(455, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
+            this.label1.Size = new System.Drawing.Size(77, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "账 号：";
             // 
@@ -55,43 +55,43 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(341, 186);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(455, 248);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 20);
+            this.label2.Size = new System.Drawing.Size(77, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "密 码：";
             // 
             // tbUser
             // 
+            this.tbUser.AcceptsTab = true;
             this.tbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUser.Location = new System.Drawing.Point(401, 140);
-            this.tbUser.Margin = new System.Windows.Forms.Padding(2);
+            this.tbUser.Location = new System.Drawing.Point(535, 187);
             this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(130, 26);
+            this.tbUser.Size = new System.Drawing.Size(172, 30);
             this.tbUser.TabIndex = 2;
             // 
             // tbPass
             // 
+            this.tbPass.AcceptsReturn = true;
             this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPass.Location = new System.Drawing.Point(401, 184);
-            this.tbPass.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPass.Location = new System.Drawing.Point(535, 245);
             this.tbPass.Name = "tbPass";
             this.tbPass.PasswordChar = '*';
-            this.tbPass.Size = new System.Drawing.Size(130, 26);
+            this.tbPass.Size = new System.Drawing.Size(172, 30);
             this.tbPass.TabIndex = 3;
+            this.tbPass.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbPass_KeyUp);
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnLogin.Location = new System.Drawing.Point(362, 226);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogin.Location = new System.Drawing.Point(483, 301);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(74, 30);
+            this.btnLogin.Size = new System.Drawing.Size(99, 40);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "登  录";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -100,14 +100,14 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnExit.Location = new System.Drawing.Point(457, 226);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(609, 301);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(74, 30);
+            this.btnExit.Size = new System.Drawing.Size(99, 40);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "取  消";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -115,12 +115,12 @@
             // 
             // Form_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::Login.Properties.Resources.login_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(625, 298);
+            this.ClientSize = new System.Drawing.Size(833, 397);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbPass);
@@ -129,7 +129,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Main";
