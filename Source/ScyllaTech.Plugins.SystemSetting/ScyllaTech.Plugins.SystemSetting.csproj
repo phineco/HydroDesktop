@@ -136,6 +136,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon1.ico" />
+    <None Include="Resources\add_cad_32px.png" />
+    <None Include="Resources\settings_32px.png" />
     <None Include="Resources\about3.jpg" />
     <None Include="Resources\about2.jpg" />
     <None Include="Resources\about1.jpg" />

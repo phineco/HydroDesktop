@@ -63,6 +63,8 @@ namespace ScyllaTech.Plugins.SystemSetting
             //head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, Msg.Select_By_Attribute, rbAttribute_Click) { GroupCaption = "地图工具", LargeImage = Resources.select_table_32 });
 
             //head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "定位", rbLatLong_Click) { GroupCaption = "查询", LargeImage = Properties.Resources.select_table_32 });
+            head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "加载CAD", add_cad_Click) { GroupCaption = "加载", LargeImage = Resources.add_cad_32px});
+
             rbLoadGps = new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步轨迹", rbLoadGps_Click) { GroupCaption = "同步", LargeImage = Resources.gps_sync_32px };
             head.Add(rbLoadGps);
             head.Add(new SimpleActionItem(HeaderControl.HomeRootItemKey, "同步采集", rbRefreshGps_Click) { GroupCaption = "同步", LargeImage = Resources.geometry_ync_32px });
@@ -70,6 +72,9 @@ namespace ScyllaTech.Plugins.SystemSetting
             head.Add(setting_tab);
             head.Add(new SimpleActionItem("kSettingTab", "重置工程", rbResetProject_Click) { GroupCaption = "工程", LargeImage = Resources.reset_32px });
             head.Add(new SimpleActionItem("kSettingTab", "坐标系设置", rbCoorSet_Click) { GroupCaption = "设置", LargeImage = Resources.coordinate_32px });
+            head.Add(new SimpleActionItem("kSettingTab", "参数设置", settings_Click) { GroupCaption = "设置", LargeImage = Resources.settings_32px });
+
+            
             head.Add(about_tab);
             head.Add(new SimpleActionItem("kAboutTab", "关于", rbAbout_Click) { GroupCaption = "关于", LargeImage = Resources.about_32px });
             head.Add(new SimpleActionItem("kAboutTab", "退出系统", rbExitSystem_Click) { GroupCaption = "用户", LargeImage = Resources.exit_32px });
@@ -109,13 +114,15 @@ namespace ScyllaTech.Plugins.SystemSetting
         #endregion
 
         #region Event Handlers
-        void testSelected(object sender, EventArgs e)
-            {
-            ((SimpleActionItem)sender).Enabled = false;
-            ((SimpleActionItem)sender).Visible = false;
-            App.HeaderControl.Remove(((SimpleActionItem)sender).RootKey);
-            String x = "xxx";
-            }
+        void add_cad_Click(object sender, EventArgs e)
+       {
+            MessageBox.Show("正在开发中", "加载CAD");
+       }
+
+        void settings_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("正在开发中", "参数设置");
+        }
 
         void rbRefreshGps_Click(object sender, EventArgs e)
         {
