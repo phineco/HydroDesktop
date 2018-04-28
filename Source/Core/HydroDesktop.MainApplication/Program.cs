@@ -50,6 +50,10 @@ namespace HydroDesktop.MainApplication
             {
                 _mainForm.appManager.SerializationManager.OpenProject(args[0]);
             }
+            else 
+            {
+                _mainForm.appManager.SerializationManager.OpenRecentProject();
+            }
 
             Application.Run(_mainForm);
         }
